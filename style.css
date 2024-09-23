@@ -1,0 +1,162 @@
+body{
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem; /* tamanho da letra */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2; /* tamanho da linha da letra */
+  background: linear-gradient(
+    90deg,
+    rgba(28, 38, 17, 1) 0%,
+    rgba(143, 166, 63, 1) 35%,
+    rgba(191, 154, 132, 1) 100%
+  );
+  color: white;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none; /*tirar sublinhado */
+  color: white;
+}
+
+a:hover { /* efeito no menu */
+  color: orange;
+  transition: 0.3s all;
+}
+
+.header {
+  background-color: #4f5928;
+  display: flex;
+  justify-content: space-between; /* deixar menu no canto */
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px; /* espacamento superior e inferior do menu */
+}
+header img { /* imagem logotipo */
+  width: 5%; /* tamanho */
+  display: block;
+}
+
+.menu { /* ul */
+  display: flex; /* ficar um do lado do outro no menu */
+  position: relative;
+  list-style: none; /* tirar marcador */
+}
+
+.menu li {
+  margin-left: 10px; /* espaço entre as linhas */
+}
+
+.menu a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+
+ /* imagem da capa */
+.cover {
+  width: 100%; /* tamanho da capa */
+  max-width: 100%;
+}
+
+.fotos{
+  width: 100%;
+}
+
+h2, h3, h4{
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* p index */
+.text{
+  width: 800px;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+  text-indent: 40px;
+  line-height: 25px;
+  flex-wrap: wrap;
+}
+
+/* causas.html */
+.conteiner{
+  width: 800px;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 25px;
+}
+
+/*galeria de fotos */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se não houver espaço suficiente. */
+  margin: 0 auto; /* alinhar ao centro */
+  max-width: 800px; /*largura maxima da foto */
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.flex > div { /*cada item */
+  /* cada foto */
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+/* Noticias */
+.flex1 {
+  display:flex;
+  margin: 0 auto; /* alinhar ao centro */
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.flex1 > div {
+  /* cada foto */
+  flex: 1 1 250px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+Form{
+  display: flex;
+    flex-direction: column;
+    padding: 100px 450px;
+    width: 40%;
+  }
+form [type="submit"] {
+  height: 50px;
+  width: 30%;
+  background-color: rgb(148, 119, 44);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
+input {
+  margin-top: 20px;
+  height: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #4f5928;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+
+main{
+  flex: 1;
+  background-color: transparent;
+}
